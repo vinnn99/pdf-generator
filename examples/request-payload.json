@@ -1,0 +1,20 @@
+{
+  "data": {
+    "nama": "Andi Supriadi",
+    "judul": "Contoh Lagu",
+    "imail": "andi@example.com",
+    "phone": "08123456789",
+    "norek": "1234567890",
+    "asNama": "PT. Rekening",
+    "bankName": "BCA",
+    "npwp": "12.345.678.9-123.456",
+    "nik": "31730xxxx",
+    "address": "Jl. Contoh No.1, Jakarta",
+    "pt": "PT. CONTOH DIGITAL",
+    "video": "https://example.com/video",
+    "pencipta": "Penulis",
+    "createdAt": "2024-02-12"
+  },
+  "image1": null,
+  "image2": null
+}

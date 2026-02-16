@@ -1,0 +1,19 @@
+{
+  "name": "pdf-generator-microservice",
+  "version": "1.0.0",
+  "description": "Standalone PDF Generator Microservice",
+  "private": true,
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node examples/test-adonis-endpoint.js"
+  },
+  "dependencies": {
+    "pdfmake": "^0.2.7",
+    "pdfkit": "^0.13.0",
+    "axios": "^1.5.0",
+    "form-data": "^4.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
