@@ -3,7 +3,7 @@ import http from 'http';
 import { URL } from 'url';
 import { generatePdfBuffer } from './pdfService.js';
 
-const PORT = process.env.PORT || 3333;
+const PORT = process.env.PORT || 3336;
 const HOST = 'localhost';
 
 const server = http.createServer(async (req, res) => {

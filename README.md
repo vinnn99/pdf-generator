@@ -80,7 +80,7 @@ npm run dev
 npm start
 ```
 
-Server akan listen di `http://localhost:3333`
+Server akan listen di `http://localhost:3336`
 
 ## API Endpoint
 
@@ -88,7 +88,7 @@ Server akan listen di `http://localhost:3333`
 
 **Request:**
 ```bash
-curl -X POST http://localhost:3333/api/v1/doc_agreement/generate \
+curl -X POST http://localhost:3336/api/v1/doc_agreement/generate \
   -H "Content-Type: application/json" \
   -d '{
     "nama": "Budi Santoso",
@@ -172,7 +172,7 @@ ls -la outputs/test-pdfmake-ttf.pdf
 
 ```bash
 # Using cURL:
-curl -X POST http://localhost:3333/api/v1/doc_agreement/generate \
+curl -X POST http://localhost:3336/api/v1/doc_agreement/generate \
   -H "Content-Type: application/json" \
   -d '{"nama":"John Doe","judul":"Sample"}' \
   --output my_agreement.pdf
