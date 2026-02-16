@@ -1,12 +1,12 @@
 # PDF Generator Microservice
 
-Backend PDF generation service untuk generate Perjanjian Lisensi (License Agreement) PDFs dengan exact 10-page template.
+Backend PDF generation service untuk generate Perjanjian Lisensi (License Agreement) PDFs.
 
 **Status**: ✅ Production-Ready (TTF fonts, PDFKit backend)
 
 ## Key Features
 
-- ✅ **10-Page Template**: Exact fidelity dengan design agreement
+- ✅ **Page Template**: Exact fidelity dengan design agreement
 - ✅ **TTF Fonts**: Direct TrueType font loading (Roboto Condensed family)
 - ✅ **Stable**: PDFKit backend dengan proven reliability
 - ✅ **Fast**: ~0.5-1s per PDF generation
@@ -21,7 +21,7 @@ pdf-generator-modul/
 │   ├── pdfService.js              ← Main PDF generator (TTF fonts, PDFKit)
 │   ├── pdfMakeService.js          ← Legacy (reference only)
 │   └── templates/
-│       └── pdfGenerator.js        ← 10-page agreement template
+│       └── pdfGenerator.js        ← page agreement template
 ├── app/
 │   └── Controllers/
 │       └── Http/
@@ -196,7 +196,7 @@ console.log(`Generated PDF: ${buf.length} bytes`);
 
 ## Features
 
-✅ **10-Page Template** - Exact fidelity with design  
+✅ **Page Template** - Exact fidelity with design  
 ✅ **TTF Fonts (Roboto)** - Direct file loading (stable)  
 ✅ **Fast Generation** - ~0.5-1s per PDF  
 ✅ **Low Memory** - 2-5MB per request  
@@ -297,7 +297,7 @@ FROM node:18-alpine
 WORKDIR /app
 COPY . .
 RUN npm install
-EXPOSE 3333
+EXPOSE 3336
 CMD ["npm", "start"]
 ```
 
@@ -306,7 +306,7 @@ CMD ["npm", "start"]
 ```bash
 # .env
 NODE_ENV=production
-PORT=3333
+PORT=3336
 ```
 
 ## Support & Debugging
@@ -322,13 +322,3 @@ Check logs:
 ```bash
 tail -f logs/error.log
 ```
-
-## Documentation
-
-- 📖 [TTF Migration Guide](TTF_MIGRATION.md) - Detailed font migration info
-- 📖 [Adonis Integration](ADONIS_INTEGRATION.md) - AdonisJS setup guide
-- 📖 [API Examples](examples/) - Code examples & test files
-
-## License
-
-MIT
